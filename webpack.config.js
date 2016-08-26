@@ -85,7 +85,6 @@ switch(TARGET) {
       {
         devtool: 'inline-source-map'
       },
-      parts.loadIsparta(PATHS.app),
       parts.loadJSX(PATHS.test)
     );
     break;

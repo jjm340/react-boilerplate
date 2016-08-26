@@ -32,20 +32,6 @@ exports.loadJSX = function(include) {
   };
 }
 
-exports.loadIsparta = function(include) {
-  return {
-    module: {
-      preLoaders: [
-        {
-          test: /\.(js|jsx)$/,
-          loaders: ['isparta'],
-          include: include
-        }
-      ]
-    }
-  };
-}
-
 exports.lintJSX = function(include) {
   return {
     module: {
