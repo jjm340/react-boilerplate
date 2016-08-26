@@ -1,3 +1,5 @@
+// TODO: update these with JEST
+
 import assert from 'assert';
 
 describe('add', function() {
