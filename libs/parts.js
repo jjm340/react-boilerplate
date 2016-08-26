@@ -108,7 +108,7 @@ exports.devServer = function(options) {
     ]
   };
 
-  if(options.poll) {
+  if (options.poll) {
     ret.watchOptions = {
       // Delay the rebuild after the first change
       aggregateTimeout: 300,
