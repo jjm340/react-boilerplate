@@ -31,6 +31,7 @@
     "eslint-plugin-react": "^5.2.2",
     "expose-loader": "^0.7.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.21.0",
     "html-webpack-template": "5.0.0",
     "jest-cli": "^14.1.0",
@@ -40,12 +41,14 @@
     "react-addons-perf": "^15.1.0",
     "react-addons-test-utils": "^15.1.0",
     "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1",
     "webpack-merge": "^0.14.0",
     "webpack-validator": "^2.2.0"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "jquery": "^3.1.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0"

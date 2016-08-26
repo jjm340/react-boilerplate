@@ -194,6 +194,42 @@ exports.extractCSS = function(paths) {
   };
 }
 
+exports.processFonts = function() {
+  return {
+    module: {
+      loaders: [{
+        test: /\.(woff|woff2)$/,
+        loader: 'url',
+        query: {
+          name: 'font/[hash].[ext]',
+          limit: 5000,
+          mimetype: 'application/font-woff'
+        }
+      },
+      {
+        test: /\.ttf$|\.eot$/,
+        loader: 'file',
+        query: {
+          name: 'font/[hash].[ext]'
+        }
+      }]
+    }
+  };
+}
+
+exports.processImages = function() {
+  return {
+    module: {
+      loaders: [
+        { 
+          test: /\.svg$/,
+          loader: "url?limit=10000&mimetype=image/svg+xml" 
+        }
+      ]
+    }
+  }
+}
+
 exports.npmInstall = function(options) {
   options = options || {};
 
