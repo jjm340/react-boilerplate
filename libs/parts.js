@@ -193,8 +193,10 @@ exports.extractCSS = function(paths) {
       loaders: [
         // Extract CSS during build
         {
-          test: /\.css$/,
-          loader: ExtractTextPlugin.extract('style', 'css'),
+          test: /\.less$/,
+          loader: ExtractTextPlugin.extract(
+            'css?sourceMap!' +
+            'less?sourceMap'),
           include: paths
         }
       ]
