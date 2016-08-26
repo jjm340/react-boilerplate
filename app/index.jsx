@@ -1,7 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-if(process.env.NODE_ENV !== 'production') {
+var React = require('react'),
+  ReactDOM = require('react-dom'),
+  createStore = require('redux').createStore,
+  Provider = require('react-redux').Provider,
+  connect = require('react-redux').connect;
+  
+if (process.env.NODE_ENV !== 'production') {
   React.Perf = require('react-addons-perf');
 }
 
