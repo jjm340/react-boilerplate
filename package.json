@@ -8,8 +8,9 @@
     "start": "webpack-dev-server --content-base build/",
     "build": "webpack",
     "test": "jest",
-    "test:tdd": "npm run test -- --auto-watch --no-single-run",
-    "test:lint": "eslint ./app ./tests --ext .js --ext .jsx --ignore-path .gitignore --ignore-pattern dist --cache"
+    "test:tdd": "npm run test -- --watch --bail",
+    "test:cover": "npm run test -- --coverage",
+    "test:lint": "eslint ./app ./__tests__ --ext .js --ext .jsx --ignore-path .gitignore --ignore-pattern dist --cache"
   },
   "keywords": [],
   "author": "",
@@ -45,6 +46,7 @@
     "webpack-validator": "^2.2.0"
   },
   "dependencies": {
+    "jquery": "^3.1.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0"
   }

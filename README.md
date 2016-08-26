@@ -16,9 +16,7 @@ See [SurviveJS - React](http://survivejs.com/react/introduction/) for the book.
 Beyond development, the boilerplate supports other tasks listed below:
 
 * `npm run build` - Generates a production build below `build/`. See the [Building with Webpack](http://survivejs.com/webpack/building-with-webpack/) part for more.
-
-* TODO: Update the test commands
-* `npm run test` - Runs `tests/` through Karma/Phantom/Mocha once.
+* `npm run test` - Runs `__tests__/` through Jest once.
 * `npm run test:tdd` - Runs `tests/` in a TDD mode (watches for changes and rebuilds).
 * `npm run test:lint` - Runs code through ESLint to spot code quality issues.
 * `npm run stats` - Generates Webpack build statistics. See the [Analyzing Build Statistics](http://survivejs.com/webpack/building-with-webpack/analyzing-build-statistics/) chapter.

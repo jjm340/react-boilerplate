@@ -4,4 +4,4 @@ coverage/
 .eslintcache
 npm-debug.log
 *.sublime-workspace
-
+stats.json
