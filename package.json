@@ -8,6 +8,7 @@
     "start": "webpack-dev-server --content-base build/",
     "build": "webpack",
     "test": "jest",
+    "test:verbose": "jest --verbose",
     "test:tdd": "npm run test -- --watch --bail",
     "test:cover": "npm run test -- --coverage",
     "test:lint": "eslint ./app ./__tests__ --ext .js --ext .jsx --ignore-path .gitignore --ignore-pattern dist --cache"
