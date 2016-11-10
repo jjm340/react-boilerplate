@@ -11,10 +11,26 @@ exports.indexTemplate = function(options) {
         template: require('html-webpack-template'),
         title: options.title,
         appMountId: options.appMountId,
+        links: options.links,
+        scripts: options.scripts,
+        meta: options.meta,
         inject: false
       })
     ]
   };
+}
+
+// TODO: Use this if you need to use jQuery plugins etc
+exports.loadGlobals = function() {
+  return {
+    plugins: [
+      new webpack.ProvidePlugin({
+        '$':'jquery',
+        'jQuery':'jquery',
+        'window.jQuery':'jquery'
+      })
+    ]
+  }
 }
 
 exports.loadJSX = function(include) {
